@@ -1,182 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <link rel="stylesheet" href="Style.css">
+	<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Exercice Html/Css</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header id="head">
-    <div class="menu-burger">
-        <div class="burger-inner"></div>
-    </div>
-    <div class="logo">
-        <img src="image/logo.png" alt="Logo" id="imagelogo">
-        <h1>COMPANY LOGO</h1>
-    </div>
-    <nav class="list">
-    <ul class="ulMenu">
-        <li class="liMenu liMenu-home"><a href="#head">Home</a></li>
-        <li>
-            <ul class="hiddenUl">
-                <li><a href="#">Menu style</a></li>
-                <li><a href="#">Sliders</a></li>
-                <li><a href="#">More Features</a></li>
+  <header>
+    <!--MENU-->
+    <nav class="navbar navbar-expand-lg navbar-light backgNav">
+      <a class="navbar-brand logo-center" href="#"><img src="https://raw.githubusercontent.com/PierreDenaes/UTOPLAB-Simplon/master/Exercices_html_css/exo-4/logo.webp" alt="logo" class="logo"><br>COMPANY LOGO</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-end 
+                   flex-fill ulNav">
+          <li class="nav-item">
+            <a class="nav-link home-menu active" href="#">HOME</a>
+            <a class="nav-link padNav" href="#">Menu style</a>
+            <a class="nav-link padNav2" href="#">Sliders</a>
+            <a class="nav-link padNav2" href="#">More Features</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+
+              </li>
             </ul>
-        </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link company-menu active" href="#">COMPANY</a>
+            <a class="nav-link padNav" href="#">About Us</a>
+            <a class="nav-link padNav2" href="#">Contact Us</a>
+            <a class="nav-link padNav2" href="#">Custom Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active portfolio-menu" href="#">PORTFOLIO</a>
+            <a class="nav-link padNav" href="#">Two Columns</a>
+            <a class="nav-link padNav2" href="#">Three Columns</a>
+            <a class="nav-link padNav2" href="#">More Layout</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active product-menu" href="#">PRODUCT</a>
+            <a class="nav-link padNav3" href="#">Product Category 1</a>
+            <a class="nav-link padNav2" href="#">Product Category 2</a>
+            <a class="nav-link padNav2" href="#">Custom Template</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active blog-menu" href="#">BLOG</a>
+            <a class="nav-link padNav" href="#">Post Types</a>
+            <a class="nav-link padNav2" href="#">Latest News</a>
+            <a class="nav-link padNav2" href="#">Custom Blog</a>
+          </li>
         </ul>
-        <ul class="ulMenu">
-        <li class="liMenu liMenu-home"><a href="#Part1">COMPANY</a></li>
-        <li>
-            <ul class="hiddenUl">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Conatct Us</a></li>
-                <li><a href="#">Custom Pages</a></li>
-            </ul>
-        </li>
-        </ul>
-        <ul class="ulMenu">
-        <li class="liMenu liMenu-home"><a href="#part2">PORTFOLIO</a></li>
-        <li>
-            <ul class="hiddenUl">
-                <li><a href="#">Two Columns</a></li>
-                <li><a href="#">Three Columns</a></li>
-                <li><a href="#">More Layout</a></li>
-            </ul>
-        </li>
-        </ul>
-        <ul class="ulMenu">
-        <li class="liMenu liMenu-home"><a href="#foder">PRODUCT</a></li>
-        <li>
-            <ul class="hiddenUl">
-                <li><a href="#">Product Category 1</a></li>
-                <li><a href="#">Product Category 2</a></li>
-                <li><a href="#">Custom Template</a></li>
-            </ul>
-        </li>
-    </ul>
-    <ul class="ulMenu">
-        <li class="liMenu liMenu-home"><a href="#F-img">BLOG</a></li>
-        <li>
-            <ul class="hiddenUl">
-                <li><a href="#">Post Types</a></li>
-                <li><a href="#">Latest News</a></li>
-                <li><a href="#">Custom Blog</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-</header>
-<div class="Part01">
-<div class="wrapper">
-    <button class="p" type="button" onclick="pre()"><i class="fas fa-chevron-left"></i></button>
-    <input type="radio" name="slide" id="one" class="M">
-    <input type="radio" name="slide" id="two" class="M">
-    <input type="radio" name="slide" id="three" class="M">
-    <input type="radio" name="slide" id="four" class="M">
-    <div class="img img-1">
-        <img src="image/projet_css_image1.png" alt="">
+      </div>
+    </nav>
+  </header>
+  <div class="divider"></div>
+  <!--photo band-->
+  <div class="row rowMargin">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-3"><img src="https://raw.githubusercontent.com/PierreDenaes/UTOPLAB-Simplon/master/Exercices_html_css/exo-4/projet_css_image1.png" alt="photo salon" class="imgRow1"></div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-3"><img src="https://raw.githubusercontent.com/PierreDenaes/UTOPLAB-Simplon/master/Exercices_html_css/exo-4/projet_css_image2.png" alt="photo sac" class="imgRow1"></div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-3"><img src="https://raw.githubusercontent.com/PierreDenaes/UTOPLAB-Simplon/master/Exercices_html_css/exo-4/projet_css_image3.png" alt="photo évier" class="imgRow1"></div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-3"><img src="https://raw.githubusercontent.com/PierreDenaes/UTOPLAB-Simplon/master/Exercices_html_css/exo-4/projet_css_image4.png" alt="photo lavabo" class="imgRow1"></div>
+  </div>
+  <div class="divider2"></div>
+  <div class="middleSentence">
+    <p class="middleS">Lorem ipsus dolor sit amet, consecteur adipisicing elit, sed do eiusmod tempor <span class="lineColor">do eius mod tempor</span> labore et dolore magna aliqua. Ut enim ad veniam</p>
+  </div>
+  <div class="divider"></div>
+  <!--Section-->
+  <div class="row rowMargin2">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-3 article1">
+      <article>
+        <h3>WELCOME</h3>
+        <h6>Lorem ipsus dolor sit amet</h6>
+        <img src="https://raw.githubusercontent.com/PierreDenaes/UTOPLAB-Simplon/master/Exercices_html_css/exo-4/projet_css_image_fish.png" alt="image de poisson" class="fishPicture">
+        <p class="pArticle1">Novi debent autem Indigna multos teneros digni amici ferunt veterrima quaeque debet sicut esse homine Indigna ea autem veterrima novi.</p>
+        <a href="#" class="nav readMore">read more &#8594;</a>
+      </article>
     </div>
-    <div class="img img-2">
-        <img src="image/back_pack.webp" alt="">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-3 article2">
+      <article>
+        <h3>LATEST WORKS</h3>
+        <h6>sub title for home page box</h6>
+        <p class="pArticle2">Damnabatur vel partes multatione aut damnabatur esset modum aut vel inimico delatus honoratorum sufficiente nobilis onere inimico multatione hostiles militarium.</p>
+        <h3>OUR PRODUCTS</h3>
+        <h6>sub title for home page box</h6>
+        <p class="pArticle3">Damnabatur vel partes multatione aut damnabatur esset modum aut vel inimico delatus honoratorum sufficiente nobilis onere inimico multatione hostiles militarium.</p>
+      </article>
     </div>
-    <div class="img img-3">
-        <img src="image/projet_css_image3.png" alt="">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-6 article3">
+      <article class="videoArticle">
+        <h3>FLEXIBLE PAGES</h3>
+        <h6>sub title for home page box</h6>
+        <iframe width="600" height="338" src="https://www.youtube.com/embed/v1PeTDrw6OY"  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </article>
     </div>
-    <div class="img img-4">
-        <img src="image/projet_css_image4.png" alt="">
+  </div>
+  <!--CONTACT-->
+  <div class="divider2"></div>
+  <div class="row contactRow">
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+      <h5>CONTACT DETAILS</h5>
+      <ul class="ulContact">
+        <li class="pContact"><i class="fas fa-home"></i> 63739 street lorem ipsum<br><span class="spanCity">City, Country</span></li>
+      <li class="pContact"><i class="fas fa-headset"></i> +1 123 312 32 23</li>
+      </ul>
+      <a href="#" class="infoComp"><i class="fas fa-envelope"></i>info@company.com</a><br>
+      <a href="#" class="supportComp"><i class="fas fa-life-ring"></i>support@company.com</a>
     </div>
-    <div class="sliders">
-        <label for="one" class="one"></label>
-        <label for="two" class="two"></label>
-        <label for="three" class="three"></label>
-        <label for="four" class="four"></label>
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+      <h5>TWITTER FEEDS</h5>
+      <h6>about 5 hours ago</h6>
+      <p>Pragmatic, pratical font sizing in<br>Css <a href="#" class="infoComp">https://t.co/K6mDVzL4</a></p>
     </div>
-    <button class="n" onclick="nex()" type="button"><i class="fas fa-chevron-right"></i></button>
-</div>
-</div>
-<hr>
-    <main id="part2">
-        <section id="COMPANY" class="Color">
-            Lorem ipsum sit amet, consectur adipisicing elit, sed do eiusmod 
-            tempor do eius mod tepor labor et <br>dolore magna aliqua Ut enim
-            ad minim veniam.
-        </section>
-    </main>
-    <Main id="products">
-        <Section id="part3" class="image">
-            <h1 id="color">WELCOME</h1> <p class="Color"><em>Lorem ipsum sit amet</em></p>
-            <img class="fish" src="image/fish.webp" alt="fish">
-            <p>Lorem ipsum sit amet, consectetur adipisicing eli,<br>Duis nec purus tellus, quis pulvinar tortor.<br>sed mattis lobortid gravida.</p>
-            <p class="paragraph Color"><em><a href="https://www.brandcrowd.com/maker/tag/company">read more</em> <img src="https://img.icons8.com/material-outlined/344/right.png" alt="" class="icon0"></a></p>
-        </Section>
-        <section id="part4">
-            <h1 id="color">LATEST WORKS</h1>
-            <p class="Color"><em>sub titile for home page box</em></p>
-            <p>Lorem ipsum sit amet, consectetur adipisicing eli,<br>Duis nec purus tellus, quis pulvinar tortor.<br>sed mattis lobortid gravida.</p>
-            <h1 id="color">OUR PRODUCTS</h1>
-            <p> Lorem ipsum sit amet</p>
-            <p>Lorem ipsum sit amet, consectetur adipisicing eli,<br>Duis nec purus tellus, quis pulvinar tortor.<br>sed mattis lobortid gravida.</p>
-        </section>
-        <section id="part5">
-            <h1 id="color">FLEXIBLE PAGES</h1>
-            <p class="Color"><em>sub titile for home page box</em></p>
-            <div class="conteneur"><iframe class="image" width="560" height="315" src="https://www.youtube.com/embed/nOdDtnHWaDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        </section>
-    </Main><hr>
-    <Main id="foder">
-        <section>
-            <h1 class="Color">CONTACT DETAILS</h1>
-            <p>
-             <img id="icon" src="https://img.icons8.com/material-outlined/344/home--v2.png" alt="">
-            
-                63739 Street lorem ipsum <br> City, Countary
-            </P>
-            <p>
-                <img src="https://img.icons8.com/external-justicon-lineal-justicon/344/external-phone-hotel-essentials-justicon-lineal-justicon.png" alt="" id="telephon">
-            +1 123 312 32 23
-                
-            </p>
-            <p class="Color">
-                <img src="https://img.icons8.com/wired/344/email.png" alt="" class="email">
-               <a href="https://mail.google.com/">info@company.com</a>
-            </p>
-            <p class="Color">
-                <img src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/344/external-support-seo-dreamstale-lineal-dreamstale.png" alt="" class="support">
-            <a href="https://mail.google.com/">Support@company.com</a>    
-            </p>
-        </section>
-        <section>
-            <h1 class="Color">TWITTER FEEDS</h1>
-            <p class="Color"><em>5 hours ago</em></p>
-            <p>Pragmatic, practical font sizing in <br>CSS<a href="http://t.co/K6mOVzL4" class="Color"> http://t.co/K6mOVzL4</a></p>
-        </section>
-        <section>
-            <h1 class="Color">RECENT POSTS</h1>
-            <p class="Color"><em>01 Mar 2012</em></p>
-            <h2>Gallery Post Type</h2>
-            <p>Lorem ipsum sit amet,<br> consectur adipisicing elit. sed et <br>ligula quis urna placerat <br> fermentum....</p>
-        </section>
-        <section>
-            <h1 class="Color">WIDGETIZED FOOTER</h1>
-            <p>Lorem ipsum sit amet,<br> consectur adipisicing elit.Nulla at <br> felis mi, at auctor mi. Donec vel nibh <br> sem. Etiam ut lacus a dui accumsan <br> accumsan. Aenean vel orci elit.</p>
-        </section>
-    </main><hr>
-    <div id="F-img">
-        <nav class="P-Fimg">
-            Press | Company Blog | Contact Us | About Us
-            Copyright<br><img class="icon3" src="https://img.icons8.com/material-outlined/344/copyright.png" alt=""> 2011 Company Name, Inc.
-        </nav>
-        <nav>
-          <a href="https://mail.google.com/"><img class="icon2" src="https://img.icons8.com/external-justicon-lineal-justicon/344/external-email-notifications-justicon-lineal-justicon.png" alt=""></a>
-          <a href="https://twitter.com"><img class="icon2" src="https://img.icons8.com/ios/344/stack-of-tweets.png" alt=""></a>
-          <a href="https://github.com/"><img class="icon2" src="https://img.icons8.com/material-outlined/344/github.png" alt=""></a>
-          <a href="https://fr-fr.facebook.com/"><img class="icon2" src="https://img.icons8.com/color/344/facebook-new.png" alt="">
-            <a href="https://www.freecodecamp.org/"><img class="icon2" src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/344/external-freecodecamp-a-non-profit-organization-that-consists-of-an-interactive-learning-web-platform-logo-bold-tal-revivo.png" alt=""></a>
-        </nav>
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+      <h5>RECENT POSTS</h5>
+      <h6>01 Mar 2012</h6>
+      <span style="font-weight:bold">Gallery Post Type</span><br>
+          <p>Eos altero est quos modo qui Cum benevola non modo memoriam quodam eos propter est quodam M' Curi quos altero.</p>
     </div>
-    <script src="Script.js"></script>
+    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+      <h5>WIDGETIZED FOOTER</h5>
+      <p class="lastP">Tandem primum ea cum et minantium primum frangerentur animo factu pro ut summo frangerentur tunc honore frangerentur tunc id sollicitas Tandem primum ea cum et minantium primum frangerentur </p>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <footer>
+    <div class="row rowMargin3">
+      <div class="col-lg-6">
+        <ul class="menuFooter">
+          <li><a href="#">Press</a></li>
+          <li><a href="#" >Company Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul><br>
+        <p class="Pfooter">Copyright &#169; Company Name, Inc.</p>
+      </div>
+      <div class="col-lg-6 alignIcon">
+        <i class="fas fa-at fa-2x"></i>
+        <i class="fab fa-twitter fa-2x"></i>
+        <i class="fab fa-facebook fa-2x"></i>
+        <i class="fab fa-google-plus fa-2x"></i>
+        <i class="fab fa-github fa-2x"></i>
+        <i class="fab fa-free-code-camp fa-2x"></i>
+      </div>
+    </div>
+  </footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
 </html>
